@@ -358,4 +358,18 @@
     </div>
   </div>
 </footer>
+<div id="lightbox" onclick="this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9999; cursor:zoom-out; align-items:center; justify-content:center;">
+  <img id="lightbox-img" style="max-width:90vw; max-height:90vh; object-fit:contain; border-radius:4px;">
+</div>
+<script>
+document.querySelectorAll('.rest-card-foto-ext').forEach(el => {
+  el.style.cursor = 'zoom-in';
+  el.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const url = this.style.backgroundImage.replace(/url\(['"]?|['"]?\)/g, '');
+    document.getElementById('lightbox-img').src = url;
+    document.getElementById('lightbox').style.display = 'flex';
+  });
+});
+</script>
 </body></html>
