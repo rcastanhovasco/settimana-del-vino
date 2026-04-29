@@ -362,11 +362,13 @@
   <img id="lightbox-img" style="max-width:90vw; max-height:90vh; object-fit:contain; border-radius:4px;">
 </div>
 <script>
-document.querySelectorAll('.rest-card-foto-ext').forEach(el => {
+document.querySelectorAll('.rest-card').forEach(el => {
   el.style.cursor = 'zoom-in';
   el.addEventListener('click', function(e) {
-    e.stopPropagation();
-    const url = this.style.backgroundImage.replace(/url\(['"]?|['"]?\)/g, '');
+    const foto = this.querySelector('.rest-card-foto-ext');
+    if (!foto) return;
+    const url = foto.style.backgroundImage.replace(/url\(['"]?|['"]?\)/g, '');
+    if (!url) return;
     document.getElementById('lightbox-img').src = url;
     document.getElementById('lightbox').style.display = 'flex';
   });
