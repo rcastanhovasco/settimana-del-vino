@@ -136,11 +136,6 @@
   .rest-card-nome { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; color: var(--creme); line-height: 1.2; text-decoration: none; display: block; transition: color 0.2s; }
   .rest-card-nome:hover { color: var(--ouro); }
 
-  @media (max-width: 600px) {
-  .restaurantes-grid { grid-template-columns: 1fr; padding: 0 1rem; }
-  .rest-card { aspect-ratio: 3/2; }
-}
-
 /* MAPA */
   .mapa-section { background: var(--vinho-escuro); padding: 7rem 4rem; }
   .mapa-inner { max-width: 1200px; margin: 0 auto; }
@@ -238,6 +233,10 @@
     font-size: 3rem; color: rgba(200,169,110,0.2);
     font-weight: 300; font-style: italic;
   }
+@media (max-width: 600px) {
+  .restaurantes-grid { grid-template-columns: 1fr !important; padding: 0 1rem; }
+  .rest-card { aspect-ratio: 3/2 !important; }
+}
 </style>
 </head>
 <body>
