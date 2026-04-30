@@ -123,7 +123,7 @@
   /* RESTAURANTES */
   .restaurantes-section { background: var(--creme-escuro); padding: 7rem 4rem; }
   .restaurantes-header { text-align: center; margin-bottom: 5rem; }
-  .restaurantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px; max-width: 1300px; margin: 0 auto; }
+  .restaurantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2px; max-width: 1300px; margin: 0 auto; }
   .rest-card { background: var(--creme); position: relative; overflow: hidden; aspect-ratio: 4/3; display: flex; flex-direction: column; justify-content: flex-end; transition: transform 0.4s; }
   .rest-card:hover { transform: scale(1.02); z-index: 2; }
   .rest-card-foto { position: absolute; inset: 0; background: var(--vinho-escuro); display: flex; align-items: center; justify-content: center; }
@@ -137,7 +137,7 @@
   .rest-card-nome:hover { color: var(--ouro); }
 
   @media (max-width: 600px) {
-  .restaurantes-grid { grid-template-columns: 1fr; }
+  .restaurantes-grid { grid-template-columns: 1fr; padding: 0 1rem; }
   .rest-card { aspect-ratio: 3/2; }
 }
 
