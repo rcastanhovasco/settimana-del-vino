@@ -238,33 +238,46 @@
   .footer-bottom { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 1rem !important; }
   .social-links { width: 100% !important; justify-content: flex-start !important; }
 
-  /* REALIZADORES: coluna única, logos centralizados, gap compacto */
+  /* REALIZADORES: coluna única, gap compacto */
   .apoio-bloco:first-child .apoio-logos {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 1rem !important;
+    gap: 0.8rem !important;
   }
-  .apoio-bloco:first-child .apoio-logo-item { width: 100% !important; display: flex !important; justify-content: center !important; }
-  .apoio-bloco:first-child a[href*="conssanpaolo"] img { height: 90px !important; width: auto !important; max-width: none !important; }
-  .apoio-bloco:first-child a[href*="iicsanpaolo"] img  { height: 65px !important; width: auto !important; max-width: none !important; }
-  .apoio-bloco:first-child a[href*="accademia"] img    { height: 80px !important; width: auto !important; max-width: none !important; }
-  .apoio-bloco:first-child a[href*="italcam"] img      { height: 50px !important; width: auto !important; max-width: none !important; }
-  .apoio-bloco:first-child a[href*="enit.it"] img      { height: 55px !important; width: auto !important; max-width: none !important; }
-  .apoio-bloco:first-child a[href*="esteri.it"] img    { height: 55px !important; width: auto !important; max-width: none !important; }
+  .apoio-bloco:first-child .apoio-logo-item {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  /* Tamanhos por width — ignora max-width inline */
+  .apoio-bloco:first-child a[href*="conssanpaolo"] img { width: 220px !important; height: auto !important; max-width: unset !important; }
+  .apoio-bloco:first-child a[href*="iicsanpaolo"] img  { width: 180px !important; height: auto !important; max-width: unset !important; }
+  .apoio-bloco:first-child a[href*="accademia"] img    { width: 80px  !important; height: auto !important; max-width: unset !important; }
+  .apoio-bloco:first-child a[href*="italcam"] img      { width: 240px !important; height: auto !important; max-width: unset !important; }
+  .apoio-bloco:first-child a[href*="enit.it"] img      { width: 80px  !important; height: auto !important; max-width: unset !important; }
+  .apoio-bloco:first-child a[href*="esteri.it"] img    { width: 75px  !important; height: auto !important; max-width: unset !important; }
 
   /* ENIT + Settimana lado a lado */
-  .apoio-bloco:first-child a[href*="enit.it"],
-  .apoio-bloco:first-child a[href*="esteri.it"] {
-    width: auto !important;
-    display: inline-flex !important;
-  }
   .apoio-bloco:first-child .apoio-logo-item:nth-child(5),
   .apoio-bloco:first-child .apoio-logo-item:nth-child(6) {
     width: auto !important;
+    display: inline-flex !important;
   }
   .apoio-bloco:first-child .apoio-logos {
-    /* agrupa ENIT e Settimana na mesma linha */
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+  }
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(1),
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(2),
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(3),
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(4) {
+    flex: 0 0 100% !important;
+    justify-content: center !important;
+  }
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(5),
+  .apoio-bloco:first-child .apoio-logo-item:nth-child(6) {
+    flex: 0 0 auto !important;
   }
 
   /* APOIO: grade 2 colunas, altura uniforme */
