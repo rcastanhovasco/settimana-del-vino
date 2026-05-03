@@ -235,28 +235,29 @@
   #evento { padding: 2rem 1rem !important; box-sizing: border-box; }
   #evento .sobre-texto { padding: 0 !important; margin: 0 !important; box-sizing: border-box; }
   #evento .sobre-texto { padding: 0 1rem !important; margin: 0 !important; box-sizing: border-box; }
-  .apoio-logo-item img { max-width: 120px !important; height: auto !important; }
-  .apoio-bloco { gap: 1rem !important; }
-  .realizadores img { max-width: 140px !important; height: auto !important; }
+  /* Logos mobile - regra geral */
   .apoio-logo-item img { max-width: 130px !important; height: auto !important; }
-  a[href*="conssanpaolo"] img { max-width: 160px !important; }
-  a[href*="italcam"] img { max-width: 170px !important; }
-  a[href*="enit"] img { max-width: 80px !important; }
-  a[href*="italea"] img { max-width: 80px !important; }
-  a[href*="settimana-della-cucina"] img { max-width: 80px !important; }
+  .apoio-bloco { gap: 1rem !important; }
   .footer-bottom { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 1rem !important; }
   .social-links { width: 100% !important; justify-content: flex-start !important; }
-}
-@media (max-width: 768px) {
-  .apoio-logo-item img {
-    max-width: 140px !important;
-    max-height: 80px !important;
-  }
-  .apoio-logo-item img[alt="Consulado Geral da Itália em São Paulo"] { max-width: 120px !important; }
-  .apoio-logo-item img[alt="ITALCAM"]                                { max-width: 260px !important; }
-  .apoio-logo-item img[alt="ENIT"]                                   { max-width: 70px !important; }
-  .apoio-logo-item img[alt="Settimana della Cucina Italiana nel Mondo"] { max-width: 80px !important; }
-  .apoio-logo-item img[alt="Vinifera Import"]                        { max-width: 180px !important; }
+
+  /* Realizadores - ajustes finos */
+  a[href*="conssanpaolo"] img  { max-width: 190px !important; } /* Consulado - maior */
+  a[href*="iicsanpaolo"] img   { max-width: 170px !important; } /* Istituto Italiano - aumentar */
+  a[href*="accademia"] img     { max-width:  80px !important; } /* Accademia - diminuir */
+  a[href*="italcam"] img       { max-width: 260px !important; } /* ITALCAM - bastante maior, sozinho */
+  a[href*="enit.it"] img       { max-width:  60px !important; } /* ENIT - diminuir */
+  a[href*="esteri.it"] img     { max-width:  70px !important; } /* Settimana Cucina - diminuir */
+
+  /* Apoio - ajustes finos */
+  a[href*="sigep"] img         { max-width:  85px !important; } /* SIGEP - diminuir */
+  a[href*="cecconello"] img    { max-width: 170px !important; } /* Cecconello - aumentar */
+  a[href*="mistral"] img       { max-width: 160px !important; } /* Mistral - aumentar */
+  a[href*="worldwine"] img     { max-width: 160px !important; } /* World Wine - aumentar */
+  a[href*="lapastina"] img     { max-width: 165px !important; } /* La Pastina - aumentar */
+  a[href*="santaluzia"] img    { max-width: 175px !important; } /* Casa Santa Luzia - aumentar */
+  a[href*="polvanitours"] img  { max-width: 175px !important; } /* Eventi Italia - aumentar */
+  a[href*="vinifera"] img      { max-width: 130px !important; } /* Vinifera - diminuir */
 }
 </style>
 </head>
