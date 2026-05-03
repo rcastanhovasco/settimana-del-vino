@@ -235,29 +235,38 @@
   #evento { padding: 2rem 1rem !important; box-sizing: border-box; }
   #evento .sobre-texto { padding: 0 !important; margin: 0 !important; box-sizing: border-box; }
   #evento .sobre-texto { padding: 0 1rem !important; margin: 0 !important; box-sizing: border-box; }
-  /* Logos mobile - regra geral */
-  .apoio-logo-item img { max-width: 130px !important; height: auto !important; }
-  .apoio-bloco { gap: 1rem !important; }
   .footer-bottom { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 1rem !important; }
   .social-links { width: 100% !important; justify-content: flex-start !important; }
 
-  /* Realizadores - ajustes finos */
-  a[href*="conssanpaolo"] img  { max-width: 380px !important; } /* Consulado - maior */
-  a[href*="iicsanpaolo"] img   { max-width: 340px !important; } /* Istituto Italiano - aumentar */
-  a[href*="accademia"] img     { max-width:  80px !important; } /* Accademia - diminuir */
-  a[href*="italcam"] img       { max-width: 240px !important; } /* ITALCAM - bastante maior, sozinho */
-  a[href*="enit.it"] img       { max-width:  60px !important; } /* ENIT - diminuir */
-  a[href*="esteri.it"] img     { max-width:  70px !important; } /* Settimana Cucina - diminuir */
+  /* Grade de logos: 2 por linha, espaço uniforme e pequeno */
+  .apoio-logos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.2rem 1rem !important;
+    align-items: center !important;
+    justify-items: center !important;
+  }
 
-  /* Apoio - ajustes finos */
-  a[href*="sigep"] img         { max-width:  85px !important; } /* SIGEP - diminuir */
-  a[href*="cecconello"] img    { max-width: 170px !important; } /* Cecconello - aumentar */
-  a[href*="mistral"] img       { max-width: 160px !important; } /* Mistral - aumentar */
-  a[href*="worldwine"] img     { max-width: 160px !important; } /* World Wine - aumentar */
-  a[href*="lapastina"] img     { max-width: 165px !important; } /* La Pastina - aumentar */
-  a[href*="santaluzia"] img    { max-width: 175px !important; } /* Casa Santa Luzia - aumentar */
-  a[href*="polvanitours"] img  { max-width: 175px !important; } /* Eventi Italia - aumentar */
-  a[href*="vinifera"] img      { max-width: 130px !important; } /* Vinifera - diminuir */
+  /* Regra geral - todos os logos */
+  .apoio-logo-item img { max-width: 85px !important; height: auto !important; object-fit: contain !important; }
+
+  /* REALIZADORES - logos que ocupam linha inteira */
+  a[href*="conssanpaolo"] img  { max-width: 360px !important; } /* Consulado - dobrado */
+  a[href*="iicsanpaolo"] img   { max-width: 320px !important; } /* Istituto - dobrado */
+  a[href*="accademia"] img     { max-width:  85px !important; } /* Accademia - -15% */
+  a[href*="italcam"] img       { max-width: 260px !important; } /* ITALCAM - sozinho */
+  a[href*="enit.it"] img       { max-width:  60px !important; } /* ENIT */
+  a[href*="esteri.it"] img     { max-width:  70px !important; } /* Settimana Cucina */
+
+  /* ITALCAM ocupa linha inteira + reduz espaço após ele */
+  a[href*="italcam"] {
+    grid-column: 1 / -1 !important;
+    margin-bottom: -0.5rem !important;
+  }
+
+  /* Consulado e Istituto também ocupam linha inteira cada */
+  a[href*="conssanpaolo"],
+  a[href*="iicsanpaolo"] { grid-column: 1 / -1 !important; }
 }
 </style>
 </head>
