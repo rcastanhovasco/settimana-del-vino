@@ -238,35 +238,44 @@
   .footer-bottom { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 1rem !important; }
   .social-links { width: 100% !important; justify-content: flex-start !important; }
 
-  /* Grade de logos: 2 por linha, espaço uniforme e pequeno */
+  /* Grade uniforme para todos os blocos de logos */
   .apoio-logos {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 1.2rem 1rem !important;
+    gap: 1rem 0.8rem !important;
     align-items: center !important;
     justify-items: center !important;
   }
 
-  /* Regra geral - todos os logos */
-  .apoio-logo-item img { max-width: 85px !important; height: auto !important; object-fit: contain !important; }
-
-  /* REALIZADORES - logos que ocupam linha inteira */
-  a[href*="conssanpaolo"] img  { max-width: 360px !important; } /* Consulado - dobrado */
-  a[href*="iicsanpaolo"] img   { max-width: 320px !important; } /* Istituto - dobrado */
-  a[href*="accademia"] img     { max-width:  85px !important; } /* Accademia - -15% */
-  a[href*="italcam"] img       { max-width: 260px !important; } /* ITALCAM - sozinho */
-  a[href*="enit.it"] img       { max-width:  60px !important; } /* ENIT */
-  a[href*="esteri.it"] img     { max-width:  70px !important; } /* Settimana Cucina */
-
-  /* ITALCAM ocupa linha inteira + reduz espaço após ele */
-  a[href*="italcam"] {
-    grid-column: 1 / -1 !important;
-    margin-bottom: -0.5rem !important;
+  /* Regra geral - base para todos */
+  .apoio-logo-item img {
+    max-width: 100px !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 
-  /* Consulado e Istituto também ocupam linha inteira cada */
-  a[href*="conssanpaolo"],
+  /* REALIZADORES */
+  a[href*="conssanpaolo"] { grid-column: 1 / -1 !important; }
+  a[href*="conssanpaolo"] img { max-width: 220px !important; }
+
   a[href*="iicsanpaolo"] { grid-column: 1 / -1 !important; }
+  a[href*="iicsanpaolo"] img  { max-width: 200px !important; }
+
+  a[href*="accademia"] img    { max-width:  85px !important; }
+
+  a[href*="italcam"] { grid-column: 1 / -1 !important; margin-bottom: -0.3rem !important; }
+  a[href*="italcam"] img      { max-width: 230px !important; }
+
+  a[href*="enit.it"] img      { max-width:  65px !important; }
+  a[href*="esteri.it"] img    { max-width:  70px !important; }
+
+  /* APOIO - ajustes finos (+25% nos menores) */
+  a[href*="cecconello"] img   { max-width: 125px !important; }
+  a[href*="santaluzia"] img   { max-width: 125px !important; }
+  a[href*="lapastina"] img    { max-width: 125px !important; }
+  a[href*="worldwine"] img    { max-width: 125px !important; }
+  a[href*="mistral"] img      { max-width: 125px !important; }
+  a[href*="polvanitours"] img { max-width: 125px !important; }
 }
 </style>
 </head>
