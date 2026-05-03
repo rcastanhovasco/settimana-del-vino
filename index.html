@@ -238,48 +238,6 @@
   .footer-bottom { flex-direction: column-reverse !important; align-items: flex-start !important; gap: 1rem !important; }
   .social-links { width: 100% !important; justify-content: flex-start !important; }
 
-  /* REALIZADORES: coluna única, gap compacto */
-  .apoio-bloco:first-child .apoio-logos {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 0.8rem !important;
-  }
-  .apoio-bloco:first-child .apoio-logo-item {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-  }
-  /* Tamanhos por width — ignora max-width inline */
-  .apoio-bloco:first-child a[href*="conssanpaolo"] img { width: 220px !important; height: auto !important; max-width: unset !important; }
-  .apoio-bloco:first-child a[href*="iicsanpaolo"] img  { width: 180px !important; height: auto !important; max-width: unset !important; }
-  .apoio-bloco:first-child a[href*="accademia"] img    { width: 80px  !important; height: auto !important; max-width: unset !important; }
-  .apoio-bloco:first-child a[href*="italcam"] img      { width: 240px !important; height: auto !important; max-width: unset !important; }
-  .apoio-bloco:first-child a[href*="enit.it"] img      { width: 80px  !important; height: auto !important; max-width: unset !important; }
-  .apoio-bloco:first-child a[href*="esteri.it"] img    { width: 75px  !important; height: auto !important; max-width: unset !important; }
-
-  /* ENIT + Settimana lado a lado */
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(5),
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(6) {
-    width: auto !important;
-    display: inline-flex !important;
-  }
-  .apoio-bloco:first-child .apoio-logos {
-    flex-wrap: wrap !important;
-    flex-direction: row !important;
-  }
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(1),
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(2),
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(3),
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(4) {
-    flex: 0 0 100% !important;
-    justify-content: center !important;
-  }
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(5),
-  .apoio-bloco:first-child .apoio-logo-item:nth-child(6) {
-    flex: 0 0 auto !important;
-  }
-
   /* APOIO: grade 2 colunas, altura uniforme */
   .apoio-bloco:last-child .apoio-logos {
     display: grid !important;
@@ -373,12 +331,12 @@ class="nav-links"><li><a href="#evento">O Evento</a></li><li><a href="#restauran
   <div class="apoio-bloco">
     <p class="apoio-titulo" style="margin-top:0;">Realizadores</p>
     <div class="apoio-logos">
-      <a href="https://conssanpaolo.esteri.it/pt/" target="_blank" class="apoio-logo-item"><img src="fotos/Consulado-Geral-da-Italia-SP.webp" alt="Consulado Geral da Itália em São Paulo" style="max-width:180px;object-fit:contain;display:block;"></a>
-      <a href="https://iicsanpaolo.esteri.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Logo-IICSP.png" alt="Istituto Italiano di Cultura di San Paolo" style="max-width:160px;object-fit:contain;display:block;"></a>
-      <a href="http://www.accademiaitalianadelladucina.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Accademia-Italiana-della-Cucina.webp" alt="Accademia Italiana della Cucina" style="max-width:100px;object-fit:contain;display:block;"></a>
-      <a href="https://italcam.com.br/" target="_blank" class="apoio-logo-item"><img src="fotos/Italcam.webp" alt="ITALCAM" style="max-width:280px;object-fit:contain;display:block;"></a>
-      <a href="https://www.enit.it/" target="_blank" class="apoio-logo-item"><img src="fotos/ENIT.webp" alt="ENIT" style="max-width:80px;object-fit:contain;display:block;"></a>
-      <a href="https://www.esteri.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Logo-Settimana-della-Cucina-Italiana-nel-Mondo.png" alt="Settimana della Cucina Italiana nel Mondo" style="max-width:90px;object-fit:contain;display:block;"></a>
+      <a href="https://conssanpaolo.esteri.it/pt/" target="_blank" class="apoio-logo-item"><img src="fotos/Consulado-Geral-da-Italia-SP.webp" alt="Consulado Geral da Itália em São Paulo" style="width:min(220px,60vw);object-fit:contain;display:block;"></a>
+      <a href="https://iicsanpaolo.esteri.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Logo-IICSP.png" alt="Istituto Italiano di Cultura di San Paolo" style="width:min(180px,55vw);object-fit:contain;display:block;"></a>
+      <a href="http://www.accademiaitalianadelladucina.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Accademia-Italiana-della-Cucina.webp" alt="Accademia Italiana della Cucina" style="width:min(80px,22vw);object-fit:contain;display:block;"></a>
+      <a href="https://italcam.com.br/" target="_blank" class="apoio-logo-item"><img src="fotos/Italcam.webp" alt="ITALCAM" style="width:min(280px,75vw);object-fit:contain;display:block;"></a>
+      <a href="https://www.enit.it/" target="_blank" class="apoio-logo-item"><img src="fotos/ENIT.webp" alt="ENIT" style="width:min(80px,22vw);object-fit:contain;display:block;"></a>
+      <a href="https://www.esteri.it/" target="_blank" class="apoio-logo-item"><img src="fotos/Logo-Settimana-della-Cucina-Italiana-nel-Mondo.png" alt="Settimana della Cucina Italiana nel Mondo" style="width:min(90px,25vw);object-fit:contain;display:block;"></a>
     </div>
   </div>
   <div class="apoio-separador"></div>
