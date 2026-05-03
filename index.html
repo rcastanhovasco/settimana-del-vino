@@ -50,27 +50,6 @@
       radial-gradient(ellipse 40% 40% at 80% 20%, rgba(200,169,110,0.06) 0%, transparent 60%);
   }
   .hero::after { content: ''; position: absolute; inset: 2rem; border: 1px solid rgba(200,169,110,0.15); pointer-events: none; }
-
-  /* Garrafas no hero */
-  .garrafa {
-    position: absolute;
-    opacity: 0.09;
-    pointer-events: none;
-  }
-  .garrafa svg { display: block; }
-
-  /* Posicionamento e animação das 5 garrafas */
-  .garrafa-1 { width: 58px;  top: 6%;    left: 5%;    animation: floatG 11s ease-in-out infinite 0s;   transform: rotate(-11deg); --r: -11deg; }
-  .garrafa-2 { width: 90px;  top: 48%;   right: 5%;   animation: floatG 13s ease-in-out infinite 2.5s; transform: rotate(8deg);  --r: 8deg;  }
-  .garrafa-3 { width: 50px;  top: 12%;   right: 14%;  animation: floatG  9s ease-in-out infinite 5s;   transform: rotate(17deg); --r: 17deg; }
-  .garrafa-4 { width: 72px;  bottom: 10%; left: 9%;   animation: floatG 12s ease-in-out infinite 1s;   transform: rotate(-6deg); --r: -6deg; }
-  .garrafa-5 { width: 44px;  top: 62%;   left: 25%;   animation: floatG 10s ease-in-out infinite 4s;   transform: rotate(21deg); --r: 21deg; }
-
-  @keyframes floatG {
-    0%,100% { transform: translateY(0)    rotate(var(--r,0deg)); }
-    50%      { transform: translateY(-18px) rotate(var(--r,0deg)); }
-  }
-
   .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--ouro); margin-bottom: 2rem; position: relative; z-index: 1; opacity: 0; animation: fadeUp 1s 0.3s forwards; }
   .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; line-height: 1; color: var(--creme); text-align: center; position: relative; z-index: 1; opacity: 0; animation: fadeUp 1s 0.5s forwards; }
   .hero-title em { font-style: italic; color: var(--ouro); display: block; font-size: 1.15em; }
